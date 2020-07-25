@@ -38,7 +38,7 @@ spec:
       imagePullSecrets: null
       containers:
         - name: cluster-agent
-          image: "datadog/cluster-agent:1.6.0"
+          image: "datadog/cluster-agent:1.7.0"
           imagePullPolicy: IfNotPresent
           resources: {}
           ports:
