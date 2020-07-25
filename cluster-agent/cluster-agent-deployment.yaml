@@ -64,6 +64,8 @@ spec:
                   key: app-key
             - name: DD_EXTERNAL_METRICS_PROVIDER_ENABLED
               value: "true"
+            - name: DD_EXTERNAL_METRICS_PROVIDER_USE_DATADOGMETRIC_CRD
+              value: "true"
             - name: DD_EXTERNAL_METRICS_PROVIDER_PORT
               value: "443"
             - name: DD_EXTERNAL_METRICS_PROVIDER_WPA_CONTROLLER
