@@ -1,16 +1,16 @@
 apiVersion: autoscaling/v2beta1
 kind: HorizontalPodAutoscaler
 metadata:
-  name: nginxext
+  name: webui
 spec:
   minReplicas: 1
   maxReplicas: 3
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: nginx
+    name: teastore-webui
   metrics:
   - type: External
     external:
-      metricName: datadogmetric@nginx-demo:nginx-requests
-      targetAverageValue: 9
+      metricName: datadogmetric@default:webui-cpu-util
+      targetAverageValue: 60
