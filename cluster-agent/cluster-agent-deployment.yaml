@@ -49,6 +49,10 @@ spec:
               name: metricsapi
               protocol: TCP
           env:
+          - name: DD_COLLECT_KUBERNETES_EVENTS
+            value: "true"
+          - name: DD_LEADER_ELECTION
+            value: "true"
             - name: DD_HEALTH_PORT
               value: "5555"
             - name: DD_API_KEY
