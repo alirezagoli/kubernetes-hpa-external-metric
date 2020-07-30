@@ -72,6 +72,8 @@ spec:
               value: "false"
             - name: DD_LOG_LEVEL
               value: "INFO"
+            - name: DD_COLLECT_KUBERNETES_EVENTS
+              value: "true"
             - name: DD_LEADER_ELECTION
               value: "true"
             - name: DD_CLUSTER_AGENT_KUBERNETES_SERVICE_NAME
