@@ -75,7 +75,7 @@ rules:
       - get
   - apiGroups: ["datadoghq.com"]
     resources:
-      - datadogmetrics
+      - "/datadogmetrics"
     verbs:
       - get
       - list
