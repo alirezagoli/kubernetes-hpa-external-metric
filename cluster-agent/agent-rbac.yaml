@@ -82,6 +82,7 @@ rules:
       - 'datadogagents/finalizers'
       - 'extendeddaemonsets'
       - 'datadogmetrics'
+      - 'datadogmetrics/status'
     verbs:
       - '*'
 ---
