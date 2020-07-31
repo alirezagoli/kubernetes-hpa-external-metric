@@ -4,3 +4,5 @@ metadata:
   name: webui-cpu-util
 spec:
   query: (sum:kubernetes.cpu.usage.total{kube_container_name:teastore-webui}/sum:kubernetes.cpu.limits{kube_container_name:teastore-webui})/10000000
+  autoscalerReferences:
+   -value: Deployment/teastore-webui
