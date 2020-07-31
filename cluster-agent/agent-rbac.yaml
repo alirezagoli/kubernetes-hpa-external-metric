@@ -58,6 +58,7 @@ rules:
       - datadog-leader-election # Leader election token
       - datadog-custom-metrics
       - extension-apiserver-authentication
+      - datadogtoken
     verbs:
       - get
       - update
