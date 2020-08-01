@@ -12,5 +12,5 @@ spec:
   metrics:
   - type: External
     external:
-      metricName: datadogmetric@demo:webui-cpu-util
+      metricName: datadogmetric@default:webui-cpu-util
       targetAverageValue: 60
