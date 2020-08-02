@@ -83,7 +83,7 @@ rules:
       - 'extendeddaemonsets'
       - 'datadogmetrics'
       - 'datadogmetrics/status'
-      - 'DatadogMetric'
+      - 'datadogmetric'
     verbs:
       - '*'
 ---
