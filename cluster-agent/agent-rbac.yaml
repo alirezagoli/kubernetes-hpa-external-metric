@@ -59,6 +59,7 @@ rules:
       - datadog-custom-metrics
       - extension-apiserver-authentication
       - datadogtoken
+      - datadog-cluster-id
     verbs:
       - get
       - update
