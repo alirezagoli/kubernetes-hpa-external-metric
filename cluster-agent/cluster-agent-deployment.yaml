@@ -3,8 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: datadog-cluster-agent
-  labels:
-    app: "datadog-cluster-agent"
+  labels: {}
 spec:
   replicas: 1
   strategy:
