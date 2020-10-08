@@ -3,4 +3,4 @@ kind: DatadogMetric
 metadata:
   name: webui-cpu
 spec:
-  query: (avg:docker.cpu.usage{kube_deployment:teastore-webui}.fill(null)/120)*100
+  query: avg:docker.cpu.usage{kube_deployment:teastore-webui}
