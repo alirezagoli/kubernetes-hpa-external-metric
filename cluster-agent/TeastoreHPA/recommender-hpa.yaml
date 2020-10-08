@@ -1,0 +1,16 @@
+apiVersion: autoscaling/v2beta1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: recommender
+spec:
+  minReplicas: 1
+  maxReplicas: 6
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: teastore-recommender
+  metrics:
+  - type: External
+    external:
+      metricName: datadogmetric@default:recommender-cpu
+      targetAverageValue: 80
