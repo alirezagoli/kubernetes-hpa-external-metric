@@ -1,19 +1,16 @@
 apiVersion: autoscaling/v2beta1
 kind: HorizontalPodAutoscaler
 metadata:
-  name: nginxext
+  name: webui
 spec:
   minReplicas: 1
   maxReplicas: 6
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name:  teastore-webui
+    name: teastore-webui
   metrics:
   - type: External
     external:
-      metricName: docker.cpu.usage
-      metricSelector:
-        matchLabels:
-            kube_deployment: teastore-webui
-      targetAverageValue: 80
+      metricName: datadogmetric@default:webui-cpu
+      targetAverageValue: 60
