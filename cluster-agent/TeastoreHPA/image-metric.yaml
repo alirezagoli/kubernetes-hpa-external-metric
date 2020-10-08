@@ -1,0 +1,6 @@
+apiVersion: datadoghq.com/v1alpha1
+kind: DatadogMetric
+metadata:
+  name: image-cpu
+spec:
+  query: (avg:docker.cpu.usage{kube_deployment:teastore-image}.fill(null)/110)*100
