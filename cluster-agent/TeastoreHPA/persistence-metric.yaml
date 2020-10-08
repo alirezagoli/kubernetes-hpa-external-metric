@@ -1,0 +1,6 @@
+apiVersion: datadoghq.com/v1alpha1
+kind: DatadogMetric
+metadata:
+  name: persistence-cpu
+spec:
+  query: (avg:docker.cpu.usage{kube_deployment:teastore-persistence}.fill(null)/90)*100
