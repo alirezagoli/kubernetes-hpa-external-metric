@@ -13,4 +13,4 @@ spec:
   - type: External
     external:
       metricName: datadogmetric@default:persistence-cpu
-      targetAverageValue: 80
+      targetValue: 80
