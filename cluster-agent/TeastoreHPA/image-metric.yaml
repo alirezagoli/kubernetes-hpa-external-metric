@@ -3,4 +3,4 @@ kind: DatadogMetric
 metadata:
   name: image-cpu
 spec:
-  query: (avg:docker.cpu.usage{kube_deployment:teastore-image}.fill(null)/110)*100
+  query: (sum:docker.cpu.usage{kube_deployment:teastore-image}.fill(null)/110)*100
