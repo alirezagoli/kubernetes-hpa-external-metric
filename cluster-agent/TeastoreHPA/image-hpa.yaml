@@ -14,4 +14,4 @@ spec:
   - type: External
     external:
       metricName: datadogmetric@default:image-cpu
-      targetValue: 80
+      targetAverageValue: 80
