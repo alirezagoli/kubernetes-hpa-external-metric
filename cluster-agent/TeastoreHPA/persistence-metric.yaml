@@ -3,4 +3,4 @@ kind: DatadogMetric
 metadata:
   name: persistence-cpu
 spec:
-  query: (avg:docker.cpu.usage{kube_deployment:teastore-persistence}.fill(null)/90)*100
+  query: (sum:docker.cpu.usage{kube_deployment:teastore-persistence}.fill(null)/90)*100
