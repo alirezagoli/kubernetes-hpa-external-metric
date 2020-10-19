@@ -3,4 +3,4 @@ kind: DatadogMetric
 metadata:
   name: recommender-cpu
 spec:
-  query: (avg:docker.cpu.usage{kube_deployment:teastore-recommender}.fill(null)/80)*100
+  query: (sum:docker.cpu.usage{kube_deployment:teastore-recommender}.fill(null)/80)*100
